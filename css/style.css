@@ -901,7 +901,10 @@ footer p {
   margin-top: 60px;
   margin-top: 6rem;
 }
-
+.mb120 {
+  margin-bottom: 120px;
+  margin-bottom: 12rem;
+}
 .mr0 {
   margin-right: 0px;
   margin-right: 0rem;
