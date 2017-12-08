@@ -6,11 +6,17 @@ body {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1.5em;
+    font-family: "Open Sans", "open-sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
 }
 
-a:focus {
-    outline: 0 solid
+p {
+    font-size: 15px;
 }
 
 img {
@@ -25,12 +31,14 @@ h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    font-weight: normal;
-    color: #333333;
-    letter-spacing: 2px;
+    /*font-weight: 600;*/
+    /*letter-spacing: 2px;*/
 }
 
 a {
+    /*display: inline-block;*/
+    text-decoration: none;
+    color: #f36;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -38,8 +46,8 @@ a {
     color: #333;
 }
 
-p {
-    font-size: 15px;
+a:focus {
+    outline: 0 solid
 }
 
 a:hover {
@@ -47,7 +55,19 @@ a:hover {
 }
 
 section {
-    padding: 100px 0;
+    padding: 60px 0;
+}
+
+.dropcap {
+    float: left;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 119.2px;
+    line-height: 90px;
+    font-weight: 400;
+    color: #fc3768;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: -1px;
 }
 
 .strong {
@@ -61,6 +81,10 @@ section {
   text-align: center;
 }
 
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
 
 .navbar-nav > li > a {
     padding: 7px 0 0;
@@ -89,7 +113,7 @@ section {
 }
 
 .navbar-nav > li.active a {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ff3365;
     background-color: none;
 }
 
@@ -116,7 +140,7 @@ section {
 }
 
 .jumbotron {
-  background:url(/imgs/gizem-designer-fullstack-developer-banner.jpg); 
+  background-color: #262b34; /*background:url(/imgs/gizem-designer-fullstack-developer-banner.jpg); */
   background-size: cover;
   background-repeat: no-repeat;   
   background-position: center top; 
@@ -124,10 +148,21 @@ section {
   width: 100%;
 }
 
+.jumbotron h3{
+  color:#fff;
+}
+.jumbotron h5{
+  color:#fff;
+}
+
 .logo.img-responsive {
   margin: 100px auto 0 auto;
   width:60%;
   z-index: 10;
+}
+.fa-angle-down{
+  color: #fff;
+  font-size: 4rem;
 }
 
 .arrow-down {
@@ -216,7 +251,15 @@ section {
 
 .description-text p {
     line-height: 24px;
+}
 
+.description-text a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+    text-decoration: none
 }
 
 .about-bottom > h4 {
@@ -424,6 +467,22 @@ section {
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+.work-header {
+  color: #ff3365;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.work-sub {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: #7e8890;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 44px;
+  text-align: center;
+}
 
 /* Img Hover
 -------------------------------------------------- */
@@ -626,15 +685,16 @@ textarea.form-control {
     background: transparent;
     text-transform: uppercase;
     border-radius: 0;
+    border-color: #ff3365;
     font-size: 11px;
     transition: all 0.5s;
-    color: #272b2f;
+    color: #ff3365;
     letter-spacing: 2px;
 }
 
 .btn-dark:hover {
     color: #fff;
-    background: #272b2f;
+    background: #fc3768;
 }
 
 .btn-pjt {
@@ -737,13 +797,13 @@ textarea.form-control {
 
 /*footer css*/
 footer {
-    background: #F5FCFC;
+    background: #262b34;
 }
 
 footer p {
     font-size: 11px;
     letter-spacing: 2px;
-    color: #282828;
+    color: #fff;
     text-transform: uppercase;
     padding: 25px 0 15px;
 }
@@ -752,8 +812,8 @@ footer p {
   height: 65px;  .push must be the same height as .footer 
 }
 
-.pink{
-    color:pink;
+.pink {
+    color: #f36;
 }
 
 /* PULSE */
