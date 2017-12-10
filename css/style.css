@@ -141,35 +141,45 @@ section {
     z-index: 10;
 }
 
-.jumbotron {
-  /*background-color: #262b34; */
-  background:url(/imgs/gizem-designer-fullstack-developer-banner.jpg); 
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;   */
-  /*background-position: center top; */
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* vertical-centered text */
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.jumbotron h3{
+.text-vcenter h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+/* additional sections */
+
+.jumbotron {
+  /*background-color: #262b34; */
+  background:url(/imgs/gizem-designer-fullstack-developer-banner.jpg) no-repeat center center fixed; 
+  height: 100%;
+  width: 100%;
+}
+
+/*.jumbotron h3{
   color:#fff;
 }
 .jumbotron h5{
   color:#fff;
-}
+}*/
 
 .logo.img-responsive {
   margin: 100px auto 0 auto;
   width:60%;
   z-index: 10;
 }
+
 .fa-angle-down{
-  color: #fff;
-  font-size: 4rem;
+  /*color: #fff;*/
+  font-size: 3rem;
 }
 
 .arrow-down {
@@ -252,9 +262,23 @@ section {
 }
 
 /*about area css*/
-#about {
-    color: #272b2f;
+.displaystyle {
+        padding: 15px;
+        margin: 15px 0;
+        background-color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+.displaystyle-leftborder {
+        padding: 15px;
+        background-color: #FFFFFF;
+        border-left: 9px solid #f36;
+        margin-bottom: 10px;
+    }
 
+.news-shadow {
+    -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.03);
 }
 
 .description-text p {
@@ -383,6 +407,9 @@ section {
 
 /* Portfolio
 -------------------------------------------------- */
+#portfolio {
+  background: #f8f8f8;
+}
 .project-name {
     padding-bottom: 55px;
     color: #272b2f;
