@@ -262,24 +262,6 @@ section {
 }
 
 /*about area css*/
-.displaystyle {
-        padding: 15px;
-        margin: 15px 0;
-        background-color: #FFFFFF;
-        margin-bottom: 10px;
-    }
-.displaystyle-leftborder {
-        padding: 15px;
-        background-color: #FFFFFF;
-        border-left: 9px solid #f36;
-        margin-bottom: 10px;
-    }
-
-.news-shadow {
-    -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.03);
-    -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.03);
-    box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.03);
-}
 
 .description-text p {
     line-height: 24px;
