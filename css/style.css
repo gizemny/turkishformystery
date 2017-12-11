@@ -484,6 +484,14 @@ section {
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+
+.shadowed {
+    -webkit-filter: drop-shadow(0px 6px 6px rgba(0,0,0,0.3));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#444')";
+}
+
 .work-header {
   color: #ff3365;
   text-transform: uppercase;
